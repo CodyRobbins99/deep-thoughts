@@ -102,7 +102,7 @@ const resolvers = {
                     { $addToSet: { friends: friendId } },
                     { new: true }
                 ).populate('friends');
-
+ 
                 return updatedUser;
             }
 
